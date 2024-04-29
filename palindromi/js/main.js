@@ -19,11 +19,12 @@ function isPalindrome() {
         inputReverse += element
     }
 
+    // controllo se la parola è palindroma e scrivo il risultato
     if (inputUtente == inputReverse) {
         result.innerHTML = inputUtente + ' è una parola palindroma!'
     } else {
         result.innerHTML = inputUtente + ' non è una parola palindroma...'
     }
-
+    // pulisco l'input
     document.getElementById('palindromo').value = ''
 }
